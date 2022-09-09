@@ -15,6 +15,9 @@ const Sorteio = () => {
 	const sortear = (evento: React.FormEvent<HTMLFormElement>) => {
 		evento.preventDefault();
 		setAmigoSecreto(resultado.get(participanteDaVez) || "");
+		setTimeout(() => {
+			setAmigoSecreto("");
+		}, 5000);
 	};
 
 	return (
